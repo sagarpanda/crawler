@@ -65,7 +65,7 @@ async function movies() {
     }
     m.songs = songs;
   }
-  fs.writeFile('api/songs.json', JSON.stringify(mov, null, 2), function (err) {
+  fs.writeFile('dist/songs.json', JSON.stringify(mov, null, 2), function (err) {
     if (err) throw err;
   });
 }
